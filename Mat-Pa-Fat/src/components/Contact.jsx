@@ -1,7 +1,7 @@
-import facebook from '../assets/icons/facebook.svg';
-import instagram from '../assets/icons/instagram.svg';
+import facebook from '../assets/icons/Facebook.svg';
+import instagram from '../assets/icons/Instagram.svg';
 import location from '../assets/icons/Location.svg';
-import phone from '../assets/icons/phone.svg';
+import phone from '../assets/icons/Phone.svg';
 export default function Contact() {
 
     return (
