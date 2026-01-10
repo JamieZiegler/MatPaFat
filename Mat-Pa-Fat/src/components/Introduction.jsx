@@ -1,4 +1,4 @@
-import jessica from '../assets/headshots/jessica.jpg'
+import jessica from '../assets/images/headshots/jessica.jpg'
 
 export default function Introduction() {
 
@@ -10,14 +10,14 @@ export default function Introduction() {
                 <article className="introduction-founder">
                     <div className="founder-text">
                         <p>
-                            Mat på Fat drivs av mig, Jessica. Jag är utbildad kock och brinner för att skapa goda måltider som piffar upp både vardag och fest.
-                            Jag lagar all mat från grunden med noga utvalda råvaror av hög kvalitet för att säkerställa bästa smak och näring.
+                            Som utbildad kock brinner jag för att laga mat från grunden med noggrant utvalda råvaror. Jag
+                            lägger stor vikt vid smaker och kvalitet och skräddarsyr lösningar efter just dina önskemål. Mitt
+                            mål är att erbjuda vällagad catering med det lilla extra, där varje beställning får den omsorg och
+                            noggrannhet som den förtjänar.
                         </p>
                         <p>
-                            Mitt mål är att göra det enkelt för dig att njuta av hemlagade, näringsrika måltider utan stressen av matlagning. Både till vardag och fest!
-                        </p>
-                        <p>
-                            Smaklig måltid!
+                            Tveka inte att höra av dig med en förfrågan – vare sig det gäller vardag eller fest. Vi tar emot
+                            beställningar från både företag och privatpersoner. Vi hörs!
                         </p>
                     </div>
 

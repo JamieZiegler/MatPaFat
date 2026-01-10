@@ -1,4 +1,4 @@
-import logo from '../assets/logo/mpf-genomskinlig-for-fonster.svg'
+import logo from '../assets/images/logo/mpf-genomskinlig-for-fonster.svg'
 import Countdown from './CountDown'
 
 export default function Hero() {

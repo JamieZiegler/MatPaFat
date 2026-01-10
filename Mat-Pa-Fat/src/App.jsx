@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Countdown from './components/CountDown'
 import './assets/styles/index.css'
 import Header from './components/Header'
@@ -7,22 +8,39 @@ import Hero from './components/Hero'
 import Contact from './components/Contact'
 import Services from './components/Services'
 import ScrollToTop from './components/ScrollToTop'
+import TermsAndPrivacy from './components/TermsAndPrivacy'
 
 function App() {
     return (
-        <> 
-            <Header />
-            <Hero />
-            <main>
-                <Introduction />
-                <Services />
-                <Contact />
-                <Footer />
-                <div className="overlay"></div>
-            </main>
-            <ScrollToTop />
-
-        </>
+        <Router>
+            <Routes>
+                <Route path="/" element={
+                    <> 
+                        <Header />
+                        <Hero />
+                        <main>
+                            <Introduction />
+                            <Services />
+                            <Contact />
+                            <Footer />
+                            <div className="overlay"></div>
+                        </main>
+                        <ScrollToTop />
+                    </>
+                } />
+                <Route path="/villkor" element={
+                    <>
+                        <Header />
+                        <main>
+                            <TermsAndPrivacy />
+                            <Footer />
+                            <div className="overlay"></div>
+                        </main>
+                        <ScrollToTop />
+                    </>
+                } />
+            </Routes>
+        </Router>
     )
 }
 
