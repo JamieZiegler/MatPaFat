@@ -1,22 +1,34 @@
 import { useState } from 'react'
-import lunch from '../assets/food/service-item-covers/lunch.png'
-import catering from '../assets/food/service-item-covers/catering.png'
-import ramen from '../assets/food/ramen-7238665.jpg'
-import pizza from '../assets/food/pizza-329523.jpg'
-import buffet from '../assets/food/buffet-7012758.jpg'
-import horsDoeuvre from '../assets/food/hors-doeuvre-2175326.jpg'
-import smorgas from '../assets/food/smorgastarta-2388075.jpg'
-import chark from '../assets/food/chark_jr.jpg'
-import tomatoes from '../assets/food/tomatoes-3702962.jpg'
-import pretzels from '../assets/food/pretzels-1491789.jpg'
+import { Link } from 'react-router-dom'
+import lunch from '../assets/images/food/lunch/lunch_cover.webp'
+import couscous from '../assets/images/food/lunch/lunch_couscous.webp'
+import fish from '../assets/images/food/lunch/lunch_fish.webp'
+import pasta from '../assets/images/food/lunch/lunch_pasta.webp'
+
+
+import catering from '../assets/images/food/catering/catering_cover.webp'
+import cake_pops from '../assets/images/food/catering/catering_cakepops.webp'
+import charcuterie from '../assets/images/food/catering/catering_charcuterie.webp'
+import charcuterie2 from '../assets/images/food/catering/catering_charcuterie_2.webp'
+import cookies from '../assets/images/food/catering/catering_cookies.webp'
+import cream_cakes from '../assets/images/food/catering/catering_cream_cakes.webp'
+import sandwich_cake from '../assets/images/food/catering/catering_sandwich_cake.webp'
+import sourdough from '../assets/images/food/catering/catering_sourdough.webp'
+
+
+import collaboration from '../assets/images/food/collaborations/collaboration_cover.webp'
+import soup from '../assets/images/food/collaborations/collaboration_soup.webp'
+import shrimp from '../assets/images/food/collaborations/collaboration_shrimp.webp'
+import risotto from '../assets/images/food/collaborations/collaboration_risotto.webp'
+
 import Carousel from './Carousel'
 
 export default function Services() {
     const [expandedId, setExpandedId] = useState(null)
 
-    const lunchImages = [lunch, ramen, pizza]
-    const cateringImages = [catering, horsDoeuvre, smorgas, buffet]
-    const samarbetenImages = [chark, tomatoes, pretzels]
+    const lunchImages = [lunch, couscous, fish, pasta]
+    const cateringImages = [catering, charcuterie2, cookies,  sourdough,cream_cakes, sandwich_cake, cake_pops, charcuterie]
+    const samarbetenImages = [collaboration, soup, shrimp, risotto]
 
     const handleExpand = (id) => setExpandedId(id)
     const handleCollapse = () => setExpandedId(null)
@@ -37,7 +49,11 @@ export default function Services() {
                             <div className="service-image">
                                 <img src={lunch} alt="Näringsrika matlådor för lunch och middag" />
                             </div>
-                            <p>Varje vecka kan du välja mellan ett antal olika matlådor som passar både till lunch och middag. Alltid lagat med noga utvalda råvaror av hög kvalitet för bästa smak och näring.</p>
+                            <p>
+                                Nylagat från grunden – helt efter dina önskemål.
+                                Mina matlådor tillagas med säsongens bästa råvaror och kyls ned direkt efter tillagning för att
+                                garantera högsta kvalitet, smak och fräschör.
+                            </p>
                             <div className="cta-lunch btn">
                                 <button className="btn-lunch" onClick={() => handleExpand('lunch')} aria-expanded="false" aria-controls="service-lunch">Läs mer om matlådor</button>
                             </div>
@@ -48,7 +64,8 @@ export default function Services() {
                                 <img src={catering} alt="Catering för alla tillfällen" />
                             </div>
                             <p>
-                                Jag erbjuder catering för alla tillfällen, från små sammankomster till stora evenemang. Jag skapar skräddarsydda menyer med fokus på kvalitet och smak för att göra din fest minnesvärd.
+                                Catering för alla tillfällen – från små sammankomster till stora evenemang. Skräddarsydda
+                                lösningar med fokus på detaljer som gör dina önskemål personliga och minnesvärda.
                             </p>
                             <div className="cta-catering btn">
                                 <button className="btn-catering" onClick={() => handleExpand('catering')} aria-expanded="false" aria-controls="service-catering">Läs mer om catering</button>
@@ -57,10 +74,11 @@ export default function Services() {
                         <article className="service-item" role="listitem">
                             <h3>Samarbeten</h3>
                             <div className="service-image">
-                                <img src={chark} alt="Samarbetsmöjligheter med restauranger och event" />
+                                <img src={collaboration} alt="Samarbetsmöjligheter med restauranger och event" />
                             </div>
                             <p>
-                                Kock för en dag, eller kanske receptkomponering? Jag samarbetar gärna med restauranger, caféer butiker och evenemang. Kontakta mig för diskussion kring partnerskap och samarbetsmöjligheter.
+                                Behöver du en kock för en dag eller vid några tillfällen? Jag samarbetar med privatpersoner,
+                                restauranger och evenemang för att skapa matupplevelser som passar just er.
                             </p>
                             <div className="cta-samarbeten btn">
                                 <button className="btn-samarbeten" onClick={() => handleExpand('samarbeten')} aria-expanded="false" aria-controls="service-samarbeten">Läs mer om samarbeten</button>
@@ -83,16 +101,26 @@ export default function Services() {
                                     {expandedId === 'lunch' && (
                                         <>
                                             <p>
-                                                Välj bland varierande, näringsrika matlådor till vardag och helg. Alltid lagat från grunden med fokus på smak, kvalitet och balans.
+                                                Jag arbetar inte med fasta veckomenyer, utan erbjuder nylagade rätter utifrån inspiration och
+                                                dina specifika önskemål. Hör av dig så skräddarsyr vi en lösning som passar dig perfekt!
                                             </p>
-                                            <h4>Veckans matlådor</h4>
-                                            <ul className="weekly-meals">
-                                                <li>Kommer snart</li>
-                                                {/* <li>Vegetarisk lasagne med spenat och ricotta</li>
-                                                <li>Fiskgratäng med potatismos och ärtor</li>
-                                                <li>Biff Stroganoff med pasta</li>
-                                                <li>Linsgryta med kokos och lime</li> */}
+                                            
+                                            <h5>Villkor</h5>
+                                            <ul className="boxed-meals">
+                                                <li>Beställning sker senast 8 dagar i förväg</li>
+                                                <li>Tillagnings- och upphämtningsdagar varierar vecka till vecka</li>
+                                                <li>Hämtas hos mig eller levereras enligt överenskommelse</li>
                                             </ul>
+                                            
+                                            <h5>Priser</h5>
+                                            <ul className="boxed-meals pricing">
+                                                <li><strong>Matlådor standard:</strong> 85 kr per portion</li>
+                                                <li><strong>Matlådor LYX inkl. dessert:</strong> 120 kr per portion</li>
+                                            </ul>
+                                            <p className="boxed-meals-note">
+                                                Skicka gärna en förfrågan för mer information och menyförslag!
+                                            </p>
+                                            <small><Link to="/villkor">Till fullständiga köpvillkor och integritetspolicy</Link></small>
                                             <div className="expanded-cta btn">
                                                 <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa matlådor">Skicka förfrågan</button>
                                             </div>
@@ -101,23 +129,25 @@ export default function Services() {
                                     {expandedId === 'catering' && (
                                         <>
                                             <p>
-                                                Skräddarsydd catering för små och stora tillställningar. Vi hjälper till med menyförslag, specialkost och upplägg för en minnesvärd upplevelse.
+                                                Smörgåstårta, chark- och grillbrickor, kalasbrickor, söta tårtor – eller varför inte en hel catering
+                                                med en välplanerad meny till festen? Alla förfrågningar är välkomna, stora som små, och vi kan
+                                                även ordna alternativ som inte listas nedan. Vi erbjuder dessutom helhetslösningar med
+                                                servering om det önskas, för att göra er tillställning komplett.
                                             </p>
-                                            <h4>Exempel på tillfällen och upplägg</h4>
-                                            <div className="example-grid">
-                                                <div className="example-card">
-                                                    <h5>Charkbrickor</h5>
-                                                    <p>Välbalanserade brickor med chark, ostar, marmelad, bröd och tillbehör. Perfekt för mingel.</p>
-                                                </div>
-                                                <div className="example-card">
-                                                    <h5>Babyshower</h5>
-                                                    <p>Fina snittar, små desserter och lättare rätter som passar firandet och temat.</p>
-                                                </div>
-                                                <div className="example-card">
-                                                    <h5>Begravning</h5>
-                                                    <p>Värdig servering med smörgåstårtor, sallader eller varma rätter efter önskemål.</p>
-                                                </div>
-                                            </div>
+                                            <h5>Exempel på produkter och riktpriser</h5>
+                                            <ul className="catering-options pricing">
+                                                <li><strong>Smörgåstårta</strong>95 - 125 kr per portion</li>
+                                                <li><strong>Grillbricka</strong>195 - 280 kr per portion</li>
+                                                <li><strong>Charkbricka</strong>185 - 280 kr per portion</li>
+                                                <li><strong>Kalasbricka</strong>50 - 85 kr per portion</li>
+                                                <li><strong>Söta tårtor</strong>45 - 100 kr per portion</li>
+                                                <li><strong>Desserter/bakverk</strong>20 - 65 kr per portion</li>
+                                            </ul>
+                                            <p className="catering-options-note">
+                                                Skicka gärna en förfrågan för mer information och menyförslag!
+                                            </p>
+
+                                            <small><Link to="/villkor">Till fullständiga köpvillkor och integritetspolicy</Link></small>
                                             <div className="expanded-cta btn">
                                                 <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa catering">Skicka förfrågan</button>
                                             </div>
@@ -126,23 +156,11 @@ export default function Services() {
                                     {expandedId === 'samarbeten' && (
                                         <>
                                             <p>
-                                                Jag är alltid öppen för nya samarbeten och partnerskap. Oavsett om du driver en restaurang, café, butik eller evenemang kan vi hitta kreativa lösningar tillsammans.
+                                                Jag gästspelar gärna på restauranger eller vid olika evenemang– eller varför inte hyra in en
+                                                personlig kock till din privata fest? Tveka inte att höra av er så hittar vi en lösning som passar
+                                                just er!
                                             </p>
-                                            <h4>Samarbetsmöjligheter</h4>
-                                            <div className="example-grid">
-                                                <div className="example-card">
-                                                    <h5>Restauranger & Caféer</h5>
-                                                    <p>Leverans av färdiglagad mat, menyutveckling eller gästspel i köket för er verksamhet.</p>
-                                                </div>
-                                                <div className="example-card">
-                                                    <h5>Butiker & Torg</h5>
-                                                    <p>Försäljning av matlådor, brickor eller specialprodukter i ert sortiment.</p>
-                                                </div>
-                                                <div className="example-card">
-                                                    <h5>Event & Festivaler</h5>
-                                                    <p>Matstånd, pop-up eller catering för evenemang och festivaler.</p>
-                                                </div>
-                                            </div>
+                                            <small><Link to="/villkor">Till fullständiga köpvillkor och integritetspolicy</Link></small>
                                             <div className="expanded-cta btn">
                                                 <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att diskutera samarbeten">Skicka förfrågan</button>
                                             </div>
