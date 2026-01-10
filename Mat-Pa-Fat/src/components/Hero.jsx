@@ -9,33 +9,45 @@ export default function Hero() {
 
     return (
         <>
-            {/* Avskommentera när verksamheten öppnat */}
-        {/* <section className="hero" aria-labelledby="hero-heading">
-                <img className="hero-logo" src={logo} alt="Mat På Fat Logo" />
-            </section> */}
-
             {/* Innan verksamheten öppnar: */}
             <div className="hero-wrapper">
-            <section className="pre-opening-hero" aria-labelledby="hero-tagline">
-                <div className="hero-content">
-                    <img className="hero-logo-small" src={logo} alt="Mat På Fat logotyp" />
-                    <h1 id="hero-tagline" className="hero-tagline">Hemlagad mat med kärlek</h1>
-                    <div className="hero-info">
-                        <p>
-                            Jag förbereder just nu för att öppna mina dörrar och börja servera dig läckra, näringsrika matlådor och skräddarsydd catering.
-                        </p>
-                        <p>
-                            Kontakta mig redan nu för prisförslag och information!
-                        </p>
-                        <div className="cta-contact">
-                            <button className="hero-contact-btn btn" onClick={scrollToContact} aria-label="Gå till kontaktformuläret">Kontakt</button>
+
+                {/* <section className="pre-opening-hero" aria-labelledby="hero-tagline">
+                    <div className="hero-content">
+                        <img className="hero-logo-small" src={logo} alt="Mat På Fat logotyp" />
+                        <h1 id="hero-tagline" className="hero-tagline">Hemlagad mat med kärlek</h1>
+                        <div className="hero-info">
+                            <p>
+                                Jag förbereder just nu för att öppna mina dörrar och börja servera dig läckra, näringsrika matlådor och skräddarsydd catering.
+                            </p>
+                            <p>
+                                Kontakta mig redan nu för prisförslag och information!
+                            </p>
+                            <div className="cta-contact">
+                                <button className="hero-contact-btn btn" onClick={scrollToContact} aria-label="Gå till kontaktformuläret">Kontakt</button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="hero-countdown-wrapper">
-                    <Countdown />
-                </div>
-            </section>
+                    <div className="hero-countdown-wrapper">
+                        <Countdown />
+                    </div>
+                </section> */}
+
+                {/* Avskommentera när verksamheten öppnat */}
+                <section className="open-hero" aria-labelledby="hero-tagline">
+                    <div className="hero-content">
+                        <img className="hero-logo" src={logo} alt="Mat På Fat logotyp" />
+                        <h1 id="hero-tagline" className="hero-tagline">Hemlagad mat med kärlek</h1>
+                        <div className="hero-info">
+                            <p>
+                                Kontakta mig för prisförslag och information!
+                            </p>
+                            <div className="cta-contact">
+                                <button className="hero-contact-btn btn" onClick={scrollToContact} aria-label="Gå till kontaktformuläret">Kontakt</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
         </>
     );
