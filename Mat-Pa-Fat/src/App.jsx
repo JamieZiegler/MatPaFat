@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Services from './components/Services'
 import ScrollToTop from './components/ScrollToTop'
 import TermsAndPrivacy from './components/TermsAndPrivacy'
+import LinkHub from './components/LinkHub'
 
 function App() {
     return (
@@ -37,6 +38,14 @@ function App() {
                             <div className="overlay"></div>
                         </main>
                         <ScrollToTop />
+                    </>
+                } />
+                <Route path="/links" element={
+                    <>
+                        <main>
+                            <LinkHub />
+                            <div className="overlay"></div>
+                        </main>
                     </>
                 } />
             </Routes>

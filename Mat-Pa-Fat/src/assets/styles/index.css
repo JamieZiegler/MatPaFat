@@ -1151,3 +1151,156 @@ button:disabled {
     cursor: not-allowed;
     background-color: #ccc; 
 }
+
+.terms-link {
+    margin-top: 20px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.terms-link a {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.linkhub-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.linkhub-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.linkhub-logo {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.linkhub-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.linkhub-container h1 {
+    font-family: 'Amsterdam Four', sans-serif;
+    font-size: 2.8em;
+    color: white;
+    margin: 0;
+    text-align: center;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.26));
+}
+
+.linkhub-tagline {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    margin: 0;
+}
+
+.linkhub-website-btn {
+    width: 100%;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #2c3e50;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Tan Garland', sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.linkhub-website-btn:hover {
+    background: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.linkhub-divider {
+    width: 60%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+}
+
+.linkhub-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.linkhub-link {
+    width: 100%;
+    padding: 15px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Tan Garland', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.linkhub-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateX(5px);
+}
+
+.linkhub-link img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+}
+
+.linkhub-contact-info {
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1em;
+}
+
+.linkhub-contact-info p {
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+@media (max-width: 500px) {
+    .linkhub-container {
+        padding: 30px 20px;
+    }
+    
+    .linkhub-container h1 {
+        font-size: 2.2em;
+    }
+    
+    .linkhub-logo {
+        width: 100px;
+        height: 100px;
+    }
+}
