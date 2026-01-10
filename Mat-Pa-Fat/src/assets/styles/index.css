@@ -1170,12 +1170,15 @@ button:disabled {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    width: 100%;
     padding: 20px;
+
 }
 
 .linkhub-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
+    min-width: 300px;
     padding: 40px 30px;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
@@ -1288,19 +1291,4 @@ button:disabled {
 .linkhub-contact-info p {
     margin: 5px 0;
     line-height: 1.6;
-}
-
-@media (max-width: 500px) {
-    .linkhub-container {
-        padding: 30px 20px;
-    }
-    
-    .linkhub-container h1 {
-        font-size: 2.2em;
-    }
-    
-    .linkhub-logo {
-        width: 100px;
-        height: 100px;
-    }
 }
