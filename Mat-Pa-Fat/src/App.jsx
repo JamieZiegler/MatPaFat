@@ -8,12 +8,14 @@ import Hero from './components/Hero'
 import Contact from './components/Contact'
 import Services from './components/Services'
 import ScrollToTop from './components/ScrollToTop'
+import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate'
 import TermsAndPrivacy from './components/TermsAndPrivacy'
 import LinkHub from './components/LinkHub'
 
 function App() {
     return (
         <Router>
+            <ScrollToTopOnNavigate />
             <Routes>
                 <Route path="/" element={
                     <> 

@@ -8,7 +8,7 @@ import pasta from '../assets/images/food/lunch/lunch_pasta.webp'
 
 import catering from '../assets/images/food/catering/catering_cover.webp'
 import cake_pops from '../assets/images/food/catering/catering_cakepops.webp'
-import charcuterie from '../assets/images/food/catering/catering_charcuterie.webp'
+import candy from '../assets/images/food/catering/catering_candyboard.webp'
 import charcuterie2 from '../assets/images/food/catering/catering_charcuterie_2.webp'
 import cookies from '../assets/images/food/catering/catering_cookies.webp'
 import cream_cakes from '../assets/images/food/catering/catering_cream_cakes.webp'
@@ -27,7 +27,7 @@ export default function Services() {
     const [expandedId, setExpandedId] = useState(null)
 
     const lunchImages = [lunch, couscous, fish, pasta]
-    const cateringImages = [catering, charcuterie2, cookies,  sourdough,cream_cakes, sandwich_cake, cake_pops, charcuterie]
+    const cateringImages = [catering, charcuterie2, cookies,  sourdough, cream_cakes, sandwich_cake, cake_pops, candy]
     const samarbetenImages = [collaboration, soup, shrimp, risotto]
 
     const handleExpand = (id) => setExpandedId(id)
@@ -107,7 +107,7 @@ export default function Services() {
                                             
                                             <h5>Villkor</h5>
                                             <ul className="boxed-meals">
-                                                <li>Beställning sker senast 8 dagar i förväg</li>
+                                                <li>Beställning och betalning sker senast 8 dagar i förväg, för mer detaljer, besök villkoren nedan</li>
                                                 <li>Tillagnings- och upphämtningsdagar varierar vecka till vecka</li>
                                                 <li>Hämtas hos mig eller levereras enligt överenskommelse</li>
                                             </ul>
@@ -120,7 +120,7 @@ export default function Services() {
                                             <p className="boxed-meals-note">
                                                 Skicka gärna en förfrågan för mer information och menyförslag!
                                             </p>
-                                            <small className="terms-link"><Link to="/villkor">Till fullständiga köpvillkor och integritetspolicy</Link></small>
+                                            <small className="terms-link"><Link to="/villkor">Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>
                                             <div className="expanded-cta btn">
                                                 <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa matlådor">Skicka förfrågan</button>
                                             </div>
@@ -147,7 +147,7 @@ export default function Services() {
                                                 Skicka gärna en förfrågan för mer information och menyförslag!
                                             </p>
 
-                                            <small className="terms-link"><Link to="/villkor">Till fullständiga köpvillkor och integritetspolicy</Link></small>
+                                            <small className="terms-link"><Link to="/villkor">Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>
                                             <div className="expanded-cta btn">
                                                 <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa catering">Skicka förfrågan</button>
                                             </div>
