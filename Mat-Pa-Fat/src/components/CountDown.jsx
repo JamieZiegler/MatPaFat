@@ -38,7 +38,7 @@ export default function Countdown() {
     return (
         <div className="countdown-timer-container" role="region" aria-label="Nedräkning till 1 februari">            
             <div className="countdown-display">
-                <p className="countdown-intro">Företaget öppnar om...</p>
+                <p className="countdown-intro">Vi öppnar om...</p>
                 <div className="row one">
                     <span>{days}</span> <span>{hours}</span> <span>{minutes}</span> <span>{seconds}</span> 
                 </div>
