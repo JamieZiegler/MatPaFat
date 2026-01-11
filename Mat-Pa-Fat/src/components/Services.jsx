@@ -120,7 +120,7 @@ export default function Services() {
                                             <p className="boxed-meals-note">
                                                 Skicka gärna en förfrågan för mer information och menyförslag!
                                             </p>
-                                            <small className="terms-link"><Link to="/villkor">Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>
+                                            <small className="terms-link"><Link to="/villkor" state={{ from: '#services' }}>Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>
                                             <div className="expanded-cta btn">
                                                 <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa matlådor">Skicka förfrågan</button>
                                             </div>
@@ -147,7 +147,7 @@ export default function Services() {
                                                 Skicka gärna en förfrågan för mer information och menyförslag!
                                             </p>
 
-                                            <small className="terms-link"><Link to="/villkor">Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>
+                                            <small className="terms-link"><Link to="/villkor" state={{ from: '#services' }}>Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>
                                             <div className="expanded-cta btn">
                                                 <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa catering">Skicka förfrågan</button>
                                             </div>
@@ -160,7 +160,7 @@ export default function Services() {
                                                 personlig kock till din privata fest? Tveka inte att höra av er så hittar vi en lösning som passar
                                                 just er!
                                             </p>
-                                            <small className="terms-link"><Link to="/villkor">Till fullständiga köpvillkor och integritetspolicy</Link></small>
+                                            <small className="terms-link"><Link to="/villkor" state={{ from: '#services' }}>Till fullständiga köpvillkor och integritetspolicy</Link></small>
                                             <div className="expanded-cta btn">
                                                 <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att diskutera samarbeten">Skicka förfrågan</button>
                                             </div>
