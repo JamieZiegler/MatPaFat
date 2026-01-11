@@ -55,7 +55,7 @@ export default function Services() {
                                 garantera högsta kvalitet, smak och fräschör.
                             </p>
                             <div className="cta-lunch btn">
-                                <button className="btn-lunch" onClick={() => handleExpand('lunch')} aria-expanded="false" aria-controls="service-lunch">Läs mer om matlådor</button>
+                                <button className="btn-lunch" onClick={() => handleExpand('lunch')} aria-expanded={expandedId === 'lunch'} aria-controls="service-lunch">Läs mer om matlådor</button>
                             </div>
                         </article>
                         <article className="service-item" role="listitem">
@@ -68,7 +68,7 @@ export default function Services() {
                                 lösningar med fokus på detaljer som gör dina önskemål personliga och minnesvärda.
                             </p>
                             <div className="cta-catering btn">
-                                <button className="btn-catering" onClick={() => handleExpand('catering')} aria-expanded="false" aria-controls="service-catering">Läs mer om catering</button>
+                                <button className="btn-catering" onClick={() => handleExpand('catering')} aria-expanded={expandedId === 'catering'} aria-controls="service-catering">Läs mer om catering</button>
                             </div>
                         </article>
                         <article className="service-item" role="listitem">
@@ -81,7 +81,7 @@ export default function Services() {
                                 restauranger och evenemang för att skapa matupplevelser som passar just er.
                             </p>
                             <div className="cta-samarbeten btn">
-                                <button className="btn-samarbeten" onClick={() => handleExpand('samarbeten')} aria-expanded="false" aria-controls="service-samarbeten">Läs mer om samarbeten</button>
+                                <button className="btn-samarbeten" onClick={() => handleExpand('samarbeten')} aria-expanded={expandedId === 'samarbeten'} aria-controls="service-samarbeten">Läs mer om samarbeten</button>
                             </div>
                         </article>
                     </div>

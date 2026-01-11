@@ -71,8 +71,8 @@ export default function Contact() {
                 <div className="contact-container icon-center">
                     <p>Jag har mottagit din förfrågan och återkommer till dig så snart som möjligt, vanligtvis inom 48 timmar.</p>
                     <div className="contact-info" style={{marginTop: '2rem', justifyContent: 'center'}}>
-                        <a href="https://www.facebook.com/profile.php?id=61583342170417" target="_blank" rel="noopener noreferrer"><img className="icon" src={facebook} alt="" role="presentation" /></a>
-                        <a href="https://www.instagram.com/matpafat_/" target="_blank" rel="noopener noreferrer"><img className="icon" src={instagram} alt="" role="presentation" /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61583342170417" target="_blank" rel="noopener noreferrer" aria-label="Besök oss på Facebook"><img className="icon" src={facebook} alt="" role="presentation" /></a>
+                        <a href="https://www.instagram.com/matpafat_/" target="_blank" rel="noopener noreferrer" aria-label="Följ oss på Instagram"><img className="icon" src={instagram} alt="" role="presentation" /></a>
                     </div>
                     <button onClick={() => setSucceeded(false)} style={{marginTop: '20px'}}>Skicka ett nytt meddelande</button>
                 </div>
@@ -117,7 +117,7 @@ export default function Contact() {
                         className={formErrors.name ? 'error' : ''}
                         disabled={submitting}
                     />
-                    {formErrors.name && <span className="error-message">{formErrors.name}</span>}
+                    {formErrors.name && <span className="error-message" role="alert">{formErrors.name}</span>}
                     
                     <label htmlFor="email">E-post:</label>
                     <input 
@@ -130,7 +130,7 @@ export default function Contact() {
                         className={formErrors.email ? 'error' : ''}
                         disabled={submitting}
                     />
-                    {formErrors.email && <span className="error-message">{formErrors.email}</span>}
+                    {formErrors.email && <span className="error-message" role="alert">{formErrors.email}</span>}
                     
                     <label htmlFor="message">Meddelande:</label>
                     <textarea 
@@ -143,7 +143,7 @@ export default function Contact() {
                         rows="5"
                         disabled={submitting}
                     ></textarea>
-                    {formErrors.message && <span className="error-message">{formErrors.message}</span>}
+                    {formErrors.message && <span className="error-message" role="alert">{formErrors.message}</span>}
                     
                     <small className="form-note">Genom att skicka detta formulär godkänner du vår <Link to="/villkor">integritetspolicy</Link>.</small>
                     

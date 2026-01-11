@@ -17,9 +17,10 @@ function App() {
             <Routes>
                 <Route path="/" element={
                     <> 
+                        <a href="#main-content" className="skip-link">Hoppa till huvudinnehåll</a>
                         <Header />
                         <Hero />
-                        <main>
+                        <main id="main-content">
                             <Introduction />
                             <Services />
                             <Contact />
@@ -31,8 +32,9 @@ function App() {
                 } />
                 <Route path="/villkor" element={
                     <>
+                        <a href="#main-content" className="skip-link">Hoppa till huvudinnehåll</a>
                         <Header />
-                        <main>
+                        <main id="main-content">
                             <TermsAndPrivacy />
                             <Footer />
                             <div className="overlay"></div>
@@ -42,7 +44,7 @@ function App() {
                 } />
                 <Route path="/links" element={
                     <>
-                        <main>
+                        <main id="main-content">
                             <LinkHub />
                             <div className="overlay"></div>
                         </main>
