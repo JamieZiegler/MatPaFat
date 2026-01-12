@@ -71,8 +71,8 @@ export default function Contact() {
                 <div className="contact-container icon-center">
                     <p>Jag har mottagit din förfrågan och återkommer till dig så snart som möjligt, vanligtvis inom 48 timmar.</p>
                     <div className="contact-info" style={{marginTop: '2rem', justifyContent: 'center'}}>
-                        <a href="https://www.facebook.com/profile.php?id=61583342170417" target="_blank" rel="noopener noreferrer" aria-label="Besök oss på Facebook"><img className="icon" src={facebook} alt="" role="presentation" /></a>
-                        <a href="https://www.instagram.com/matpafat_/" target="_blank" rel="noopener noreferrer" aria-label="Följ oss på Instagram"><img className="icon" src={instagram} alt="" role="presentation" /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61583342170417" target="_blank" rel="noopener noreferrer" aria-label="Besök oss på Facebook"><img className="icon" src={facebook} alt="" role="presentation" width="40" height="40" /></a>
+                        <a href="https://www.instagram.com/matpafat_/" target="_blank" rel="noopener noreferrer" aria-label="Följ oss på Instagram"><img className="icon" src={instagram} alt="" role="presentation" width="40" height="40" /></a>
                     </div>
                     <button onClick={() => setSucceeded(false)} style={{marginTop: '20px'}}>Skicka ett nytt meddelande</button>
                 </div>
@@ -167,10 +167,10 @@ export default function Contact() {
                 </div>
 
                 <div className="contact-info" aria-label="Sociala medier och kontakt">
-                    <a href="https://www.facebook.com/profile.php?id=61583342170417" aria-label="Besök oss på Facebook" target="_blank" rel="noopener noreferrer"><img className="icon" src={facebook} alt="" role="presentation" /></a>
-                    <a href="https://www.instagram.com/matpafat_/" aria-label="Följ oss på Instagram" target="_blank" rel="noopener noreferrer"><img className="icon" src={instagram} alt="" role="presentation" /></a>
-                    <a href="https://maps.app.goo.gl/yP7fW2PoECrE9D5M8" aria-label="Hitta oss på kartan" target="_blank" rel="noopener noreferrer"><img className="icon" src={location} alt="" role="presentation" /></a>
-                    <a href="tel:+#" aria-label="Ring oss"><img className="icon" src={phone} alt="" role="presentation" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61583342170417" aria-label="Besök oss på Facebook" target="_blank" rel="noopener noreferrer"><img className="icon" src={facebook} alt="" role="presentation" width="40" height="40" /></a>
+                    <a href="https://www.instagram.com/matpafat_/" aria-label="Följ oss på Instagram" target="_blank" rel="noopener noreferrer"><img className="icon" src={instagram} alt="" role="presentation" width="40" height="40" /></a>
+                    <a href="https://maps.app.goo.gl/yP7fW2PoECrE9D5M8" aria-label="Hitta oss på kartan" target="_blank" rel="noopener noreferrer"><img className="icon" src={location} alt="" role="presentation" width="40" height="40" /></a>
+                    <a href="tel:+#" aria-label="Ring oss"><img className="icon" src={phone} alt="" role="presentation" width="40" height="40" /></a>
                 </div>
             </div>
         </section>

@@ -16,6 +16,14 @@
     font-display: swap;
 }
 
+img {
+    content-visibility: auto;
+}
+
+img[width][height] {
+    height: auto;
+}
+
 .skip-link {
     position: absolute;
     top: -100px;

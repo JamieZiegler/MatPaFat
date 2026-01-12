@@ -47,7 +47,7 @@ export default function Services() {
                         <article className="service-item" role="listitem">
                             <h3>Matlådor</h3>
                             <div className="service-image">
-                                <img src={lunch} alt="Näringsrika matlådor för lunch och middag" />
+                                <img src={lunch} alt="Näringsrika matlådor för lunch och middag" width="400" height="300" loading="lazy" decoding="async" />
                             </div>
                             <p>
                                 Nylagat från grunden – helt efter dina önskemål.
@@ -61,7 +61,7 @@ export default function Services() {
                         <article className="service-item" role="listitem">
                             <h3>Catering</h3>
                             <div className="service-image">
-                                <img src={catering} alt="Catering för alla tillfällen" />
+                                <img src={catering} alt="Catering för alla tillfällen" width="400" height="300" loading="lazy" decoding="async" />
                             </div>
                             <p>
                                 Catering för alla tillfällen – från små sammankomster till stora evenemang. Skräddarsydda
@@ -74,7 +74,7 @@ export default function Services() {
                         <article className="service-item" role="listitem">
                             <h3>Samarbeten</h3>
                             <div className="service-image">
-                                <img src={collaboration} alt="Samarbetsmöjligheter med restauranger och event" />
+                                <img src={collaboration} alt="Samarbetsmöjligheter med restauranger och event" width="400" height="300" loading="lazy" decoding="async" />
                             </div>
                             <p>
                                 Behöver du en kock för en dag eller vid några tillfällen? Jag samarbetar med privatpersoner,
@@ -139,6 +139,7 @@ export default function Services() {
                                                 <li><strong>Smörgåstårta</strong>95 - 125 kr per portion</li>
                                                 <li><strong>Grillbricka</strong>195 - 280 kr per portion</li>
                                                 <li><strong>Charkbricka</strong>185 - 280 kr per portion</li>
+                                                <li><strong>Tapasbricka</strong>295 - 375 kr per portion</li>
                                                 <li><strong>Kalasbricka</strong>50 - 85 kr per portion</li>
                                                 <li><strong>Söta tårtor</strong>45 - 100 kr per portion</li>
                                                 <li><strong>Desserter/bakverk</strong>20 - 65 kr per portion</li>

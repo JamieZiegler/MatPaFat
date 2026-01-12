@@ -22,7 +22,7 @@ export default function Introduction() {
                     </div>
 
                     <div className="founder">
-                        <img src={jessica} alt="Jessica, grundare och kock på Mat På Fat" />
+                        <img src={jessica} alt="Jessica, grundare och kock på Mat På Fat" loading="lazy" decoding="async" />
                     <p>Jessica, Grundare & Kock</p>
                 </div>
                 </article>

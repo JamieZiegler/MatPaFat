@@ -1,8 +1,20 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function Carousel({ images = [], alt = '' }) {
   const [idx, setIdx] = useState(0)
+  const [loadedImages, setLoadedImages] = useState(new Set([0]))
   const total = images.length
+
+  useEffect(() => {
+    const toPreload = [(idx + 1) % total, (idx - 1 + total) % total]
+    toPreload.forEach(i => {
+      if (!loadedImages.has(i)) {
+        const img = new Image()
+        img.src = images[i]
+        setLoadedImages(prev => new Set([...prev, i]))
+      }
+    })
+  }, [idx, total, images, loadedImages])
 
   if (total === 0) return null
 
@@ -12,7 +24,13 @@ export default function Carousel({ images = [], alt = '' }) {
   return (
     <div className="carousel">
       <div className="carousel-image">
-        <img src={images[idx]} alt={alt} />
+        <img 
+          src={images[idx]} 
+          alt={alt}
+          width="600"
+          height="400"
+          decoding="async"
+        />
       </div>
       <div className="carousel-controls">
         <button className="carousel-btn prev" onClick={prev} aria-label="Föregående">‹</button>
@@ -27,7 +45,14 @@ export default function Carousel({ images = [], alt = '' }) {
             onClick={() => setIdx(i)}
             aria-label={`Bild ${i + 1}`}
           >
-            <img src={src} alt={`${alt} ${i + 1}`} />
+            <img 
+              src={src} 
+              alt={`${alt} ${i + 1}`}
+              width="80"
+              height="60"
+              loading="lazy"
+              decoding="async"
+            />
           </button>
         ))}
       </div>
