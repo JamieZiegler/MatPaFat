@@ -15,6 +15,12 @@ export default defineConfig({
     minify: 'esbuild',
     target: 'es2020',
     cssCodeSplit: true,
+    cssMinify: 'esbuild',
+    sourcemap: false,
+    esbuild: {
+      drop: ['console', 'debugger'],
+      legalComments: 'none',
+    },
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'react-router-dom'],
