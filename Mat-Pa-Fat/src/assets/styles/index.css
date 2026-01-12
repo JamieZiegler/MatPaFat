@@ -642,6 +642,13 @@ nav ul a:focus {
     .example-grid {
         grid-template-columns: 1fr;
     }
+    .expanded-text {
+        text-align: left;
+    }
+    .expanded-cta {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .service-expanded-header {

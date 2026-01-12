@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import lunch from '../assets/images/food/lunch/lunch_cover.webp'
 import couscous from '../assets/images/food/lunch/lunch_couscous.webp'
@@ -25,12 +25,20 @@ import Carousel from './Carousel'
 
 export default function Services() {
     const [expandedId, setExpandedId] = useState(null)
+    const servicesRef = useRef(null)
 
     const lunchImages = [lunch, couscous, fish, pasta]
     const cateringImages = [catering, charcuterie2, cookies,  sourdough, cream_cakes, sandwich_cake, cake_pops, candy]
     const samarbetenImages = [collaboration, soup, shrimp, risotto]
 
-    const handleExpand = (id) => setExpandedId(id)
+    const handleExpand = (id) => {
+        setExpandedId(id)
+        setTimeout(() => {
+            if (servicesRef.current) {
+                servicesRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+            }
+        }, 0)
+    }
     const handleCollapse = () => setExpandedId(null)
     
     const scrollToContact = () => {
@@ -40,7 +48,7 @@ export default function Services() {
 
     return (
         <>
-            <section className="services" id="services" aria-labelledby="services-heading">
+            <section className="services" id="services" ref={servicesRef} aria-labelledby="services-heading">
                 <h2 id="services-heading">Mina tjänster</h2>
                 {expandedId === null ? (
                     <div className="service-container" role="list" key="collapsed">
