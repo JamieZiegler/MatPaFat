@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Contact from './components/Contact'
 import Services from './components/Services'
+// import Offer from './components/Offer'
 import ScrollToTop from './components/ScrollToTop'
 import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate'
 import TermsAndPrivacy from './components/TermsAndPrivacy'
@@ -23,6 +24,7 @@ function App() {
                         <Header />
                         <Hero />
                         <main id="main-content">
+                            {/* <Offer /> */}
                             <Introduction />
                             <Services />
                             <Contact />

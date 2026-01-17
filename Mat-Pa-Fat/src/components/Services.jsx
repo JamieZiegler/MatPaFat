@@ -55,7 +55,7 @@ export default function Services() {
                         <article className="service-item" role="listitem">
                             <h3>Matlådor</h3>
                             <div className="service-image">
-                                <img src={lunch} alt="Näringsrika matlådor för lunch och middag" width="400" height="300" loading="lazy" decoding="async" />
+                                <img src={lunch} alt="Catering i Lindesberg - Näringsrika matlådor för lunch och middag från Mat på Fat" width="400" height="300" loading="lazy" decoding="async" />
                             </div>
                             <p>
                                 Nylagat från grunden – helt efter dina önskemål.
@@ -69,7 +69,7 @@ export default function Services() {
                         <article className="service-item" role="listitem">
                             <h3>Catering</h3>
                             <div className="service-image">
-                                <img src={catering} alt="Catering för alla tillfällen" width="400" height="300" loading="lazy" decoding="async" />
+                                <img src={catering} alt="Catering i Lindesberg för alla tillfällen från Mat på Fat" width="400" height="300" loading="lazy" decoding="async" />
                             </div>
                             <p>
                                 Catering för alla tillfällen – från små sammankomster till stora evenemang. Skräddarsydda
@@ -82,7 +82,7 @@ export default function Services() {
                         <article className="service-item" role="listitem">
                             <h3>Samarbeten</h3>
                             <div className="service-image">
-                                <img src={collaboration} alt="Samarbetsmöjligheter med restauranger och event" width="400" height="300" loading="lazy" decoding="async" />
+                                <img src={collaboration} alt="Samarbetsmöjligheter med restauranger och event i Lindesberg med omnejd från Mat på Fat" width="400" height="300" loading="lazy" decoding="async" />
                             </div>
                             <p>
                                 Behöver du en kock för en dag eller vid några tillfällen? Jag samarbetar med privatpersoner,
@@ -109,8 +109,8 @@ export default function Services() {
                                     {expandedId === 'lunch' && (
                                         <>
                                             <p>
-                                                Jag arbetar inte med fasta veckomenyer, utan erbjuder nylagade rätter utifrån inspiration och
-                                                dina specifika önskemål. Hör av dig så skräddarsyr vi en lösning som passar dig perfekt!
+                                                Mat på Fat arbetar inte med fasta veckomenyer, utan erbjuder nylagade rätter utifrån inspiration och
+                                                dina specifika önskemål, med leverans eller avhämtning i Lindesberg med omnejd. Hör av dig så skräddarsyr vi en lösning som passar dig perfekt!
                                             </p>
                                             
                                             <h5>Villkor</h5>
@@ -130,17 +130,17 @@ export default function Services() {
                                             </p>
                                             <small className="terms-link"><Link to="/villkor" state={{ from: '#services' }}>Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>
                                             <div className="expanded-cta btn">
-                                                <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa matlådor">Skicka förfrågan</button>
+                                                <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa matlådor från Mat på Fat">Skicka förfrågan</button>
                                             </div>
                                         </>
                                     )}
                                     {expandedId === 'catering' && (
                                         <>
                                             <p>
-                                                Smörgåstårta, chark- och grillbrickor, kalasbrickor, söta tårtor – eller varför inte en hel catering
-                                                med en välplanerad meny till festen? Alla förfrågningar är välkomna, stora som små, och vi kan
-                                                även ordna alternativ som inte listas nedan. Vi erbjuder dessutom helhetslösningar med
-                                                servering om det önskas, för att göra er tillställning komplett.
+                                                Mat på Fat erbjuder smörgåstårta, chark- och grillbrickor, kalasbrickor, söta tårtor – eller varför inte en hel catering
+                                                med en välplanerad meny till festen? Alla förfrågningar, stora som små, i Lindesberg med omnejd, är välkomna.
+                                                Vi kan även ordna alternativ som inte listas nedan. Vi erbjuder dessutom helhetslösningar med servering om det önskas, 
+                                                för att göra er tillställning komplett.
                                             </p>
                                             <h5>Exempel på produkter och riktpriser</h5>
                                             <ul className="catering-options pricing">
@@ -158,33 +158,33 @@ export default function Services() {
 
                                             <small className="terms-link"><Link to="/villkor" state={{ from: '#services' }}>Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>
                                             <div className="expanded-cta btn">
-                                                <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa catering">Skicka förfrågan</button>
+                                                <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att beställa catering från Mat på Fat">Skicka förfrågan</button>
                                             </div>
                                         </>
                                     )}
                                     {expandedId === 'samarbeten' && (
                                         <>
                                             <p>
-                                                Jag gästspelar gärna på restauranger eller vid olika evenemang– eller varför inte hyra in en
+                                                Jag gästspelar gärna på restauranger eller vid olika evenemang i Bergslagen – eller varför inte hyra in en
                                                 personlig kock till din privata fest? Tveka inte att höra av er så hittar vi en lösning som passar
                                                 just er!
                                             </p>
                                             <small className="terms-link"><Link to="/villkor" state={{ from: '#services' }}>Till fullständiga köpvillkor och integritetspolicy</Link></small>
                                             <div className="expanded-cta btn">
-                                                <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att diskutera samarbeten">Skicka förfrågan</button>
+                                                <button onClick={scrollToContact} aria-label="Gå till kontaktformuläret för att diskutera samarbeten med Mat på Fat">Skicka förfrågan</button>
                                             </div>
                                         </>
                                     )}
                                 </div>
                                 <div className="expanded-media">
                                     {expandedId === 'lunch' && (
-                                        <Carousel images={lunchImages} alt="Matlådor" />
+                                        <Carousel images={lunchImages} alt="Matlådor från Mat på Fat i Lindesberg med omnejd" />
                                     )}
                                     {expandedId === 'catering' && (
-                                        <Carousel images={cateringImages} alt="Catering" />
+                                        <Carousel images={cateringImages} alt="Catering från Mat på Fat i Lindesberg med omnejd" />
                                     )}
                                     {expandedId === 'samarbeten' && (
-                                        <Carousel images={samarbetenImages} alt="Samarbeten" />
+                                        <Carousel images={samarbetenImages} alt="Samarbeten från Mat på Fat i Lindesberg med omnejd" />
                                     )}
                                 </div>
                             </div>
