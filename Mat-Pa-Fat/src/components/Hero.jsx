@@ -19,6 +19,7 @@ export default function Hero() {
                 <section className="pre-opening-hero" aria-labelledby="hero-tagline">
                     <div className="hero-content">
                         <img className="hero-logo-small" src={logo} alt="Mat På Fat Bergslagen logotyp" width="280" height="200" fetchPriority="high" />
+                        <h1 className="sr-only">Catering i Lindesberg</h1>
                         <h1 id="hero-tagline" className="hero-tagline">Hemlagad mat med kärlek</h1>
                         <div className="hero-info">
                             <p>
