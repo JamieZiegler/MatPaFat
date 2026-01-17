@@ -1,10 +1,11 @@
 import { useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
+
 import lunch from '../assets/images/food/lunch/lunch_cover.webp'
 import couscous from '../assets/images/food/lunch/lunch_couscous.webp'
 import fish from '../assets/images/food/lunch/lunch_fish.webp'
 import pasta from '../assets/images/food/lunch/lunch_pasta.webp'
-
+import bolognese from '../assets/images/food/lunch/lunch_bolognese.webp'
 
 import catering from '../assets/images/food/catering/catering_cover.webp'
 import cake_pops from '../assets/images/food/catering/catering_cakepops.webp'
@@ -27,7 +28,7 @@ export default function Services() {
     const [expandedId, setExpandedId] = useState(null)
     const servicesRef = useRef(null)
 
-    const lunchImages = [lunch, couscous, fish, pasta]
+    const lunchImages = [lunch, couscous, fish, pasta, bolognese]
     const cateringImages = [catering, charcuterie2, cookies,  sourdough, cream_cakes, sandwich_cake, cake_pops, candy]
     const samarbetenImages = [collaboration, soup, shrimp, risotto]
 
