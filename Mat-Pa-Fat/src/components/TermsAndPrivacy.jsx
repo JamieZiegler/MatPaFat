@@ -1,10 +1,13 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 export default function TermsAndPrivacy() {
+    const location = useLocation()
+    const fromHash = location.state?.from || ''
+
     return (
         <div className="terms-privacy-page">
             <div className="terms-privacy-header">
-                <Link to="/" className="back-link">← Tillbaka till startsidan</Link>
+                <Link to={`/${fromHash}`} className="back-link">← Tillbaka till startsidan</Link>
             </div>
             
             <div className="terms-privacy-content">

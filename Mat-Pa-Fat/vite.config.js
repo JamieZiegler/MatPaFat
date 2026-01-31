@@ -4,4 +4,25 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
+    minify: 'esbuild',
+    target: 'es2020',
+    cssCodeSplit: true,
+    cssMinify: 'esbuild',
+    sourcemap: false,
+    esbuild: {
+      drop: ['console', 'debugger'],
+      legalComments: 'none',
+    },
+  },
+  optimizeDeps: {
+    include: ['react', 'react-dom', 'react-router-dom'],
+  },
 })

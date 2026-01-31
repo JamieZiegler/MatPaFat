@@ -14,8 +14,8 @@ export default function Hero() {
 
                 {/* <section className="pre-opening-hero" aria-labelledby="hero-tagline">
                     <div className="hero-content">
-                        <img className="hero-logo-small" src={logo} alt="Mat På Fat logotyp" />
-                        <h1 id="hero-tagline" className="hero-tagline">Hemlagad mat med kärlek</h1>
+                        <img className="hero-logo-small" src={logo} alt="Mat På Fat Bergslagen logotyp" width="280" height="200" fetchPriority="high" />
+                        <h1 className="sr-only">Catering i Lindesberg</h1>
                         <div className="hero-info">
                             <p>
                                 Jag förbereder just nu för att öppna mina dörrar och börja servera dig läckra, näringsrika matlådor och skräddarsydd catering.
@@ -36,8 +36,8 @@ export default function Hero() {
                 {/* Avskommentera när verksamheten öppnat */}
                 <section className="open-hero" aria-labelledby="hero-tagline">
                     <div className="hero-content">
-                        <img className="hero-logo" src={logo} alt="Mat På Fat logotyp" />
-                        <h1 id="hero-tagline" className="hero-tagline">Hemlagad mat med kärlek</h1>
+                        <img className="hero-logo-small" src={logo} alt="Mat På Fat Bergslagen logotyp" width="280" height="200" fetchPriority="high" />
+                        <h1 className="sr-only">Catering i Lindesberg</h1>
                         <div className="hero-info">
                             <p>
                                 Kontakta mig för prisförslag och information!

@@ -7,19 +7,24 @@ import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Contact from './components/Contact'
 import Services from './components/Services'
+// import Offer from './components/Offer'
 import ScrollToTop from './components/ScrollToTop'
+import ScrollToTopOnNavigate from './components/ScrollToTopOnNavigate'
 import TermsAndPrivacy from './components/TermsAndPrivacy'
 import LinkHub from './components/LinkHub'
 
 function App() {
     return (
         <Router>
+            <ScrollToTopOnNavigate />
             <Routes>
                 <Route path="/" element={
                     <> 
+                        <a href="#main-content" className="skip-link">Hoppa till huvudinnehåll</a>
                         <Header />
                         <Hero />
-                        <main>
+                        <main id="main-content">
+                            {/* <Offer /> */}
                             <Introduction />
                             <Services />
                             <Contact />
@@ -31,8 +36,9 @@ function App() {
                 } />
                 <Route path="/villkor" element={
                     <>
+                        <a href="#main-content" className="skip-link">Hoppa till huvudinnehåll</a>
                         <Header />
-                        <main>
+                        <main id="main-content">
                             <TermsAndPrivacy />
                             <Footer />
                             <div className="overlay"></div>
@@ -42,7 +48,7 @@ function App() {
                 } />
                 <Route path="/links" element={
                     <>
-                        <main>
+                        <main id="main-content">
                             <LinkHub />
                             <div className="overlay"></div>
                         </main>

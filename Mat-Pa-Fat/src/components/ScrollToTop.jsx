@@ -30,7 +30,7 @@ export default function ScrollToTop() {
                 <button
                     onClick={scrollToTop}
                     className="scroll-to-top"
-                    aria-label="Scroll to top"
+                    aria-label="Scrolla till toppen av sidan"
                 >
                     ↑
                 </button>
