@@ -182,7 +182,7 @@ nav ul {
 nav ul a{
     text-decoration: none;
     font-family: 'Tan Garland', sans-serif;
-    font-size: clamp(1em, 2vw, 1.5em);
+    font-size: 1.5em;
     color: white;
     padding: 10px 15px;
     border-radius: 4px;
@@ -202,6 +202,8 @@ nav ul a:focus {
     outline: 2px solid rgba(255, 255, 255, 0.8);
     outline-offset: 2px;
 }
+
+
 
 
 .hero-wrapper {
@@ -242,7 +244,7 @@ nav ul a:focus {
 
 
 .hero-logo-small {
-    width: clamp(400px, 50vw, 580px);
+    width: clamp(200px, 90%, 580px);
     max-width: 90%;
     filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.26));
 }
@@ -264,7 +266,7 @@ nav ul a:focus {
 }
 
 .hero-info p {
-    font-size: 14px;
+    font-size: 1.2em;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.95);
     margin: 0;
@@ -1350,6 +1352,165 @@ button:disabled {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+
+@media (max-width: 650px) {
+
+
+    nav {
+
+        padding: 0 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+        width: 100%;
+    }
+
+    nav ul a {
+        flex: 0 0 calc(50% - 6px);
+        text-align: center;
+        padding: 12px 5px;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul a:active {
+        background: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+}
+
+
+/* Korta breda skärmar */
+@media (min-width: 700px) and (max-height: 700px) {
+    
+
+    .open-hero {
+        height: 100%;
+        max-height: 85vh;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .hero-logo-small {
+        min-width: 100px;
+        width: 100%;
+        max-width: 300px; 
+    }
+
+}
+
+/* Landskapsläge telefon */
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .open-hero {
+        height: auto !important; 
+        min-height: 85vh; 
+        padding: 15px; 
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    header {
+        padding: 20px 0;
+        margin-bottom: 5px;
+    }
+
+    nav ul a {
+        font-size: 1.1em;
+        padding: 5px 8px;
+    }
+
+    .hero-logo-small {
+        width: 140px; 
+        max-width: 25vw;
+    }
+
+    .hero-tagline {
+        font-size: 2em; 
+    }
+
+    .hero-info p {
+        font-size: 1em;
+    }
+
+
+    main {
+        gap: 20px;
+    }
+
+    .service-container {
+        flex-direction: column; 
+    }
+
+    .service-item:not(.expanded) {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto 1fr auto;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        overflow: hidden;
+        min-height: 200px;
+    }
+
+    .service-item:not(.expanded) .service-image {
+        grid-column: 1;
+        grid-row: 1 / 4;
+        height: 100%;
+        margin: 0;
+
+    }
+
+    .service-item:not(.expanded) .service-image img {
+        height: 100%;       
+        aspect-ratio: 16 / 9;
+        display: block;
+    }
+
+    .service-item:not(.expanded) h3 {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 15px 20px 5px 0;
+        font-size: 1.6em;
+        line-height: 1.2;
+    }
+
+    .service-item:not(.expanded) p {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0 20px 10px 0;
+        font-size: 1.05em;
+        line-height: 1.4;
+        align-self: start;
+        display: -webkit-box;
+        overflow: hidden;
+    }
+
+    .service-item:not(.expanded) .btn {
+        grid-column: 2;
+        grid-row: 3;
+        
+        width: 100%;
+        margin: 0 20px 15px 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .service-item:not(.expanded) .btn button {
+        padding: 8px 20px;
+        font-size: 1.1em;
+    }
 }
 
 
