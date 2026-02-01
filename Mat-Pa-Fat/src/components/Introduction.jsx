@@ -5,10 +5,10 @@ export default function Introduction() {
     return (
         <>
         <section className="introduction" id="introduction" aria-labelledby="introduction-heading">
-            <h2 id="introduction-heading">Välkommen till<br />Mat På Fat!</h2>
             <div className="introduction-container">            
                 <article className="introduction-founder">
                     <div className="founder-text">
+                        <h2 id="introduction-heading">Hej!</h2>
                         <p>
                             Som utbildad kock brinner jag för att laga mat från grunden med noggrant utvalda råvaror. Jag
                             lägger stor vikt vid smaker och kvalitet och skräddarsyr lösningar efter just dina önskemål. Mitt

@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     background-color: #0d0a09;
-    background-image: url('../images/food/background.webp');
+    background-image: url('../images/food/background2.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -87,29 +87,28 @@ main {
     padding: 0 20px;
 }
 
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(58, 52, 52, 0.5);
-    backdrop-filter: blur(15px);
-    z-index: -1;
-    pointer-events: none;
-}
 
 h1 {
     font-family: 'Amsterdam Four', sans-serif;
     font-size: 5.5em;
     color: black;
+    text-shadow: 2px 6px 10px rgba(0, 0, 0, 0.1);
+    filter: none;
+}
+
+.hero-tagline {
+    font-family: 'Amsterdam Four', sans-serif;
+    font-size: clamp(2em, 5vw, 3.5em);
+    color: white;
+    margin: 0;
     filter: drop-shadow(2px 6px 4px rgba(0, 0, 0, 0.26));
 }
 
 h2 {
     font-family: 'Amsterdam Four', sans-serif;
     font-size: 3.2em;
-    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.26));
+    text-shadow: 2px 6px 10px rgba(0, 0, 0, 0.1);
+    filter: none;
     color: white;
     margin: 10px auto;
     text-align: center;
@@ -125,9 +124,15 @@ h2 br {
     }
 }
 
+
+.hero-content h2 {
+    font-size: clamp(1.5em, 4vw, 2.5em);
+    margin: 0;
+}
+
 h3 {
     font-size: 2.2em;
-    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.26));
+    text-shadow: 2px 6px 10px rgba(0, 0, 0, 0.1);
     color: white;
     margin: 0 auto;
     width: 100%;
@@ -141,6 +146,21 @@ p {
     line-height: 1.6;
     width: 100%;
 }
+
+.hero-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+}
+
+
+
+
+
+
+
+
 
 header {
     display: flex;
@@ -218,7 +238,7 @@ nav ul a:focus {
     height: 85vh;
     padding: clamp(30px, 5vw, 60px) clamp(20px, 4vw, 40px);
     margin: 0 auto 30px auto;
-    gap: 60px;
+    gap: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -244,18 +264,12 @@ nav ul a:focus {
 
 
 .hero-logo-small {
-    width: clamp(200px, 90%, 580px);
-    max-width: 90%;
+    width: clamp(200px, 80%, 580px);
+    max-width: 80%;
     filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.26));
 }
 
-.hero-tagline {
-    font-family: 'Amsterdam Four', sans-serif;
-    font-size: clamp(2em, 5vw, 3.5em);
-    color: white;
-    margin: 0;
-    filter: drop-shadow(2px 6px 4px rgba(0, 0, 0, 0.26));
-}
+
 
 .hero-info {
     display: flex;
@@ -265,12 +279,7 @@ nav ul a:focus {
     max-width: 600px;
 }
 
-.hero-info p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.95);
-    margin: 0;
-}
+
 
 .hero-countdown-wrapper {
     width: 100%;
@@ -352,6 +361,13 @@ nav ul a:focus {
 
 .introduction-container {
     width: 100%;
+}
+
+.introduction h2 {
+    font-size: 2.8em;
+    margin: 0 0 10px 0;
+    text-align: left;
+    align-self: flex-start;
 }
 
 .introduction-founder {
@@ -751,38 +767,72 @@ nav ul a:focus {
     margin-top: auto;
 }
 
-.hero-contact-btn {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-family: 'Tan Garland', sans-serif;
-    font-size: 1.4em;
-    cursor: pointer;
-}
 
-.service-item .btn button {
+.service-item .btn button,
+.hero-contact-btn,
+.linkhub-website-btn,
+.contact-form button {
     padding: 15px 30px;
     border: none;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     font-family: 'Tan Garland', sans-serif;
     font-size: 1.4em;
     cursor: pointer;
+    font-weight: 600;
+    color: #2c3e50;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: none;
+    appearance: none;
+    color: #2c3e50;
+
 }
 
 .service-item .btn button:hover,
 .contact-form button:hover,
-.hero-contact-btn:hover {
+.hero-contact-btn:hover,
+.linkhub-website-btn:hover {
     background-color: rgba(255, 255, 255, 0.9);
     font-weight: bold;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
 .service-item .btn button:focus,
 .contact-form button:focus,
-.hero-contact-btn:focus {
+.hero-contact-btn:focus,
+.linkhub-website-btn:focus {
     outline: 2px solid rgba(255, 255, 255, 0.9);
     outline-offset: 2px;
+}
+
+.service-item .btn button:visited,
+.hero-contact-btn:visited,
+.linkhub-website-btn:visited,
+.contact-form button:visited {
+    color: #2c3e50;
+}
+
+.linkhub-website-btn {
+    width: 100%;
+    color: #2c3e50;
+    border-radius: 12px;
+}
+
+.contact-form button {
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
+}
+
+.hero-contact-btn {
+    max-width: 200px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 
@@ -865,18 +915,7 @@ nav ul a:focus {
     margin-bottom: 5px;
 }
 
-.contact-form button, .contact-container button {
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.7);
-    font-family: 'Tan Garland', sans-serif;
-    font-size: 1.4em;
-    cursor: pointer;
-    width: 100%;
-    max-width: 200px;
-    align-self: center;
-}
+
 
 .contact-details {
     width: 100%;
@@ -889,7 +928,8 @@ nav ul a:focus {
     font-size: 1.8em;
     color: white;
     margin-bottom: 20px;
-    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.26));
+    text-shadow: 2px 6px 10px rgba(0, 0, 0, 0.1);
+    filter: none;
 }
 
 .contact-detail-item {
@@ -1256,33 +1296,6 @@ button:disabled {
     margin: 0;
 }
 
-.linkhub-website-btn {
-    width: 100%;
-    padding: 15px 30px;
-    background: rgba(255, 255, 255, 0.9);
-    color: #2c3e50;
-    border: none;
-    border-radius: 12px;
-    font-family: 'Tan Garland', sans-serif;
-    font-size: 1.3em;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.linkhub-website-btn:hover {
-    background: white;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
-}
-
-.linkhub-website-btn:focus {
-    outline: 3px solid white;
-    outline-offset: 3px;
-}
 
 .linkhub-divider {
     width: 60%;
@@ -1389,22 +1402,17 @@ button:disabled {
 
 
 /* Korta breda skärmar */
-@media (min-width: 700px) and (max-height: 700px) {
+@media (min-width: 700px) and (max-height: 750px) {
     
 
     .open-hero {
-        height: 100%;
-        max-height: 85vh;
-        padding: 30px 20px;
-        gap: 20px;
+        height: auto !important; 
+        min-height: 100vh; 
+        padding: 15px; 
+        gap: 10px;
+        margin-bottom: 20px;
+        align-items: space-between;
     }
-
-    .hero-logo-small {
-        min-width: 100px;
-        width: 100%;
-        max-width: 300px; 
-    }
-
 }
 
 /* Landskapsläge telefon */
@@ -1412,10 +1420,11 @@ button:disabled {
 
     .open-hero {
         height: auto !important; 
-        min-height: 85vh; 
+        min-height: 100vh; 
         padding: 15px; 
         gap: 10px;
         margin-bottom: 20px;
+        align-items: space-between;
     }
 
     header {
@@ -1429,18 +1438,29 @@ button:disabled {
     }
 
     .hero-logo-small {
-        width: 140px; 
-        max-width: 25vw;
+        width: 100%;
+        max-width: 50vw;
+        
     }
 
     .hero-tagline {
         font-size: 2em; 
     }
 
+    .hero-content h2 {
+        font-size: 1.8em; 
+    }
+
     .hero-info p {
         font-size: 1em;
     }
 
+    .hero-contact-btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        max-width: 180px;
+    }
 
     main {
         gap: 20px;
@@ -1476,7 +1496,13 @@ button:disabled {
         display: block;
     }
 
-    .service-item:not(.expanded) h3 {
+    .service-item .expanded-text {
+        grid-column: 2;
+        grid-row: 1 / 4;
+        gap: 10px;
+    }
+
+    .service-item h3 {
         grid-column: 2;
         grid-row: 1;
         margin: 15px 20px 5px 0;
@@ -1484,7 +1510,7 @@ button:disabled {
         line-height: 1.2;
     }
 
-    .service-item:not(.expanded) p {
+    .service-item p {
         grid-column: 2;
         grid-row: 2;
         margin: 0 20px 10px 0;
@@ -1495,7 +1521,7 @@ button:disabled {
         overflow: hidden;
     }
 
-    .service-item:not(.expanded) .btn {
+    .service-item .btn {
         grid-column: 2;
         grid-row: 3;
         
@@ -1507,10 +1533,64 @@ button:disabled {
         align-items: center;
     }
 
-    .service-item:not(.expanded) .btn button {
+    .service-item .btn button {
         padding: 8px 20px;
         font-size: 1.1em;
+        margin: 0 20px 15px 0;
     }
+
+    .terms-link {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+
+.contact-container {
+        display: grid;
+        grid-template-areas: 
+            "intro intro"
+            "form details"
+            "form info";
+        grid-template-columns: 1.2fr 0.8fr; 
+        grid-template-rows: auto 1fr auto;
+        gap: 15px 30px;
+        padding: 30px;
+        align-items: start;
+    }
+
+    .contact-container > p {
+        grid-area: intro;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .contact-form {
+        grid-area: form;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .contact-details {
+        grid-area: details;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0;
+    }
+
+    .contact-info {
+        grid-area: info;
+        width: 100%;
+        gap: 40px;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 35px;
+    }
+
+
+
 }
 
 
