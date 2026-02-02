@@ -1430,7 +1430,7 @@ button:disabled {
 
 
 /* Korta breda skärmar */
-@media (min-width: 700px) and (max-height: 750px) {
+@media (min-width: 700px) and (max-height: 850px) {
     
 
     .open-hero {
