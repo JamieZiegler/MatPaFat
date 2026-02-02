@@ -123,7 +123,7 @@ export default function Services() {
                                             
                                             <h5>Priser</h5>
                                             <ul className="boxed-meals pricing">
-                                                <li><strong>Matlådor standard:</strong> 85 kr per portion</li>
+                                                <li><strong>Matlådor standard:</strong> 90 kr per portion</li>
                                                 <li><strong>Matlådor LYX inkl. dessert:</strong> 120 kr per portion</li>
                                             </ul>
                                             <p className="boxed-meals-note">
