@@ -14,36 +14,57 @@ export default function TermsAndPrivacy() {
                 <section className="terms-section">
                     <h1>Köpevillkor - Mat på Fat</h1>
                     
-                    <h3>Mindre beställningar (Matlådor, smörgåstårtor, charkbrickor etc.)</h3>
-                    <p>
-                        Beställning och betalning sker senast 8 dagar före leverans. Vid avbokning senare än 8 dagar
-                        före leverans sker ingen återbetalning, då livsmedel är undantagna ångerrätten enligt lag. I
-                        vissa fall är det möjligt att beställa med kortare framförhållning, tveka inte att höra av dig med en
-                        förfrågan!
-                    </p>
+                    <h3>Mindre beställningar</h3>
+                    <h4 className="subheading">Matlådor, smörgåstårtor, charkbrickor etc.</h4>
+                    <ul>
+                        <h4>Bokning</h4>
+                        <li>
+                            Minst 8 dagar innan önskat datum för garanterad leverans.
+                        </li>
+                        <li>
+                            Senare beställningar kan accepteras i vissa fall, men kan inte garanteras.
+                        </li>
+                        <li>
+                            Bokningen är bekräftad vid betalning enligt överenskommelse.
+                        </li>
+                        <h4>Avbokning</h4>
+                        <li>
+                            Avbokning måste ske senast 8 dagar före leverans för full återbetalning.
+                        </li>
+                        <small>
+                            För mer information gällande ångerrätt och livsmedel, besök <a href="https://www.konsumentverket.se/marknadsratt-foretag/informationskrav-vid-distansavtal-regler-for-foretag/#1SpqFzVfOocM3LJdp9VW32">konsumentverket</a>.
+                        </small>
+
+                    </ul>
                     
                     <h3>Catering</h3>
                     
                     <ul>
-                        <h4>Deposition:</h4>
+                        <h4>Deposition</h4>
                         <li>
                             Vid bokning av catering erläggs en deposition på 30 %. För stora event
                             (t.ex. bröllop) erläggs 50 %. Bokningen blir bindande när depositionen är registrerad.
                         </li>
-                        <h4>Antal gäster:</h4>
+                        <h4>Antal gäster</h4>
                         <li>
                             Definitivt antal gäster meddelas senast 14 dagar före leverans. 
                         </li>
                         <li>
-                            För stora event, bröllop eller vid särskilda råvarubeställningar gäller 30 dagar. Vänligen notera att
-                            vid specifika önskemål eller större beställningar kan det slutgiltiga antalet gäster behöva
-                            bekräftas tidigare än standard. Det meddelade antalet utgör grund för slutgiltig fakturering
-                            och kan inte minskas efter detta datum.
+                            För stora evenemang, bröllop eller vid särskilda råvarubeställningar gäller 30 dagar. 
                         </li>
-                        <h4>Avbokning catering:</h4>
+                        <li>
+                            Vid specifika önskemål eller större beställningar kan det slutgiltiga antalet gäster behöva
+                            bekräftas tidigare enligt överenskommelse.
+                        </li>
+                        <li>
+                            Det meddelade antalet utgör grund för slutgiltig fakturering
+                            och kan inte minskas efter angivet datum.
+                        </li>
+
+                        <h4>Avbokning catering</h4>
                         <li>
                             Vid avbokning tidigare än 14 dagar (normal) eller 30-60 dagar 
-                            (beroende på omfattning, stora event) före leverans återbetalas depositionen minus en administrativ 
+                            (stora evenemang) före leverans återbetalas depositionen minus en administrativ 
                             avgift på 500 kr.
                         </li>
                         <li>
@@ -190,7 +211,7 @@ export default function TermsAndPrivacy() {
                     </p>
                     
                     <p className="last-updated">
-                        <em>Senast uppdaterad: Januari 2026</em>
+                        <em>Senast uppdaterad: Februari 2026</em>
                     </p>
                 </section>
             </div>

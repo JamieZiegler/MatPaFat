@@ -56,6 +56,7 @@ export default function Contact() {
                 body: new URLSearchParams(formData).toString(),
             });
             setSucceeded(true);
+            setSubmitting(false);
             form.reset();
         } catch (error) {
             alert("Något gick fel när meddelandet skulle skickas. Försök igen senare.");
@@ -70,11 +71,15 @@ export default function Contact() {
                 <h2>Tack för ditt meddelande!</h2>
                 <div className="contact-container icon-center">
                     <p>Jag har mottagit din förfrågan och återkommer till dig så snart som möjligt, vanligtvis inom 48 timmar.</p>
+                    <p>Observera att meddelanden i formuläret <u>inte är en bokning</u>, utan en förfrågan.</p>
+                    <p>Bokningar bekräftas enligt överenskommelse och vid betalning.</p>
                     <div className="contact-info" style={{marginTop: '2rem', justifyContent: 'center'}}>
-                        <a href="https://www.facebook.com/profile.php?id=61583342170417" target="_blank" rel="noopener noreferrer" aria-label="Besök oss på Facebook"><img className="icon" src={facebook} alt="" role="presentation" width="40" height="40" /></a>
-                        <a href="https://www.instagram.com/matpafat_/" target="_blank" rel="noopener noreferrer" aria-label="Följ oss på Instagram"><img className="icon" src={instagram} alt="" role="presentation" width="40" height="40" /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61583342170417" aria-label="Besök oss på Facebook" target="_blank" rel="noopener noreferrer"><img className="icon" src={facebook} alt="" role="presentation" width="40" height="40" /></a>
+                        <a href="https://www.instagram.com/matpafat_/" aria-label="Följ oss på Instagram" target="_blank" rel="noopener noreferrer"><img className="icon" src={instagram} alt="" role="presentation" width="40" height="40" /></a>
+                        <a href="https://maps.app.goo.gl/yP7fW2PoECrE9D5M8" aria-label="Hitta oss på kartan" target="_blank" rel="noopener noreferrer"><img className="icon" src={location} alt="" role="presentation" width="40" height="40" /></a>
+                        <a href="tel:+46703225801" aria-label="Ring oss"><img className="icon" src={phone} alt="" role="presentation" width="40" height="40" /></a>
                     </div>
-                    <button onClick={() => setSucceeded(false)} style={{marginTop: '20px'}}>Skicka ett nytt meddelande</button>
+                    <button className="contact-button" onClick={() => setSucceeded(false)} style={{marginTop: '20px'}}>Skicka ett nytt meddelande</button>
                 </div>
             </section>
         );
@@ -145,8 +150,12 @@ export default function Contact() {
                         ></textarea>
                         {formErrors.message && <span className="error-message" role="alert">{formErrors.message}</span>}
                     
-                        <small className="form-note">Genom att skicka detta formulär godkänner du vår <Link to="/villkor">integritetspolicy</Link>.</small>
-                    
+                        <div className="form-notes">
+                            <small className="form-note">Genom att skicka detta formulär godkänner du vår <Link to="/villkor">integritetspolicy</Link>.</small>
+                            <small className="form-note"><i>Observera att formulärmeddelanden <u>inte är en bokning</u>. För mer information, besök våra <Link to="/villkor">villkor</Link>.</i></small>
+
+                        </div>
+                        
                         <button type="submit" disabled={submitting}>
                             {submitting ? 'Skickar...' : 'Skicka'}
                         </button>
