@@ -658,6 +658,22 @@ nav ul a:focus {
     }
 }
 
+.mobile-break {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .mobile-break {
+        display: block;
+    }
+
+    .boxed-meals.pricing li,
+    .catering-options.pricing li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 .service-expanded-header {
     display: flex;
     align-items: center;

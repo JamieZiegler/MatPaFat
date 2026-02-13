@@ -123,8 +123,8 @@ export default function Services() {
                                             
                                             <h5>Priser</h5>
                                             <ul className="boxed-meals pricing">
-                                                <li><strong>Matlådor standard:</strong> 90 kr per portion</li>
-                                                <li><strong>Matlådor LYX inkl. dessert:</strong> 120 kr per portion</li>
+                                                <li><strong>Matlådor standard:</strong><br className="mobile-break" /> 90 kr per portion</li>
+                                                <li><strong>Matlådor LYX inkl. dessert:</strong><br className="mobile-break" /> 120 kr per portion</li>
                                             </ul>
                                             <p className="boxed-meals-note">
                                                 Skicka gärna en förfrågan för mer information och menyförslag!
@@ -145,13 +145,13 @@ export default function Services() {
                                             </p>
                                             <h5>Exempel på produkter och riktpriser</h5>
                                             <ul className="catering-options pricing">
-                                                <li><strong>Smörgåstårta</strong>95 - 125 kr per portion</li>
-                                                <li><strong>Grillbricka</strong>195 - 280 kr per portion</li>
-                                                <li><strong>Charkbricka</strong>185 - 280 kr per portion</li>
-                                                <li><strong>Tapasbricka</strong>295 - 375 kr per portion</li>
-                                                <li><strong>Kalasbricka</strong>50 - 85 kr per portion</li>
-                                                <li><strong>Söta tårtor</strong>45 - 100 kr per portion</li>
-                                                <li><strong>Desserter/bakverk</strong>20 - 65 kr per portion</li>
+                                                <li><strong>Smörgåstårta</strong><br className="mobile-break" />95 - 125 kr per portion</li>
+                                                <li><strong>Grillbricka</strong><br className="mobile-break" />195 - 280 kr per portion</li>
+                                                <li><strong>Charkbricka</strong><br className="mobile-break" />185 - 280 kr per portion</li>
+                                                <li><strong>Tapasbricka</strong><br className="mobile-break" />295 - 375 kr per portion</li>
+                                                <li><strong>Kalasbricka</strong><br className="mobile-break" />50 - 85 kr per portion</li>
+                                                <li><strong>Söta tårtor</strong><br className="mobile-break" />45 - 100 kr per portion</li>
+                                                <li><strong>Desserter/bakverk</strong><br className="mobile-break" />20 - 65 kr per portion</li>
                                             </ul>
                                             <p className="catering-options-note">
                                                 Skicka gärna en förfrågan för mer information och menyförslag!
