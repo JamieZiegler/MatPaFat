@@ -146,7 +146,7 @@ export default function Services() {
                                             <h5>Exempel på produkter och riktpriser</h5>
                                             <ul className="catering-options pricing">
                                                 <li><strong>Smörgåstårta</strong><br className="mobile-break" />95 - 125 kr per portion</li>
-                                                <li><strong>Grillbricka</strong><br className="mobile-break" />195 - 280 kr per portion</li>
+                                                <li><strong>Grillbricka</strong><br className="mobile-break" />195 - 325 kr per portion</li>
                                                 <li><strong>Charkbricka</strong><br className="mobile-break" />185 - 280 kr per portion</li>
                                                 <li><strong>Tapasbricka</strong><br className="mobile-break" />295 - 375 kr per portion</li>
                                                 <li><strong>Kalasbricka</strong><br className="mobile-break" />50 - 85 kr per portion</li>
