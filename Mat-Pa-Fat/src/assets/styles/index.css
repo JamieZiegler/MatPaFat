@@ -910,6 +910,25 @@ nav ul a:focus {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
+.notice {
+    background: rgba(255, 49, 49, 0.472);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.notice p {
+    font-weight: 600;
+
+    font-size: 1.3em;
+}
+
+.notice p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -956,7 +975,7 @@ nav ul a:focus {
     font-family: 'Tan Garland', sans-serif;
 }
 
-.contact-container p {
+.contact-container p:not(.notice p) {
     font-family: 'Tan Garland', sans-serif;
     font-size: 1.2em;
     color: white;
