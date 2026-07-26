@@ -110,7 +110,14 @@ export default function Contact() {
                         <p className="hidden-honey">
                             <label>Fyll inte i detta fält om du är människa: <input name="botField" /></label>
                         </p>
-
+                        <div className="notice">
+                            <p>
+                                OBS ! Mat på Fat har semesterstängt under vecka 31 - 33.
+                            </p>
+                            <p>
+                                <u>Meddelanden besvaras åter vecka 34.</u>
+                            </p>
+                        </div>
                         <label htmlFor="name">Namn:</label>
                         <input 
                             type="text" 
