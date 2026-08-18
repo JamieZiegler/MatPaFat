@@ -139,13 +139,16 @@ export default function Services() {
                                         <>
                                             <p>
                                                 Mat på Fat erbjuder smörgåstårta, chark- och grillbrickor, kalasbrickor, söta tårtor – eller varför inte en hel catering
-                                                med en välplanerad meny till festen? Alla förfrågningar, stora som små, i Lindesberg med omnejd, är välkomna.
+                                                med en välplanerad meny till festen? 
+                                            </p>
+                                            <p>
+                                                Alla förfrågningar, stora som små, i Lindesberg med omnejd, är välkomna.
                                                 Vi kan även ordna alternativ som inte listas nedan. Vi erbjuder dessutom helhetslösningar med servering om det önskas, 
                                                 för att göra er tillställning komplett.
                                             </p>
                                             <h5>Exempel på produkter och riktpriser</h5>
                                             <ul className="catering-options pricing">
-                                                <li><strong>Smörgåstårta</strong><br className="mobile-break" />95 - 125 kr per portion</li>
+                                                <li><strong>Smörgåstårta</strong><br className="mobile-break" />95 - 130 kr per portion</li>
                                                 <li><strong>Grillbricka</strong><br className="mobile-break" />195 - 325 kr per portion</li>
                                                 <li><strong>Charkbricka</strong><br className="mobile-break" />185 - 280 kr per portion</li>
                                                 <li><strong>Tapasbricka</strong><br className="mobile-break" />295 - 375 kr per portion</li>
@@ -154,7 +157,7 @@ export default function Services() {
                                                 <li><strong>Desserter/bakverk</strong><br className="mobile-break" />20 - 65 kr per portion</li>
                                             </ul>
                                             <p className="catering-options-note">
-                                                Skicka gärna en förfrågan för mer information och menyförslag!
+                                                Skicka gärna en förfrågan för mer information samt meny- och prisförslag!
                                             </p>
 
                                             <small className="terms-link"><Link to="/villkor" state={{ from: '#services' }}>Var god läs fullständiga köpvillkor och integritetspolicy innan beställning</Link></small>

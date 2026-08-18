@@ -233,7 +233,7 @@ nav ul a:focus {
     padding: 0 20px;
 }
 
-.open-hero {
+.hero {
     width: 100%;
     height: 85vh;
     padding: clamp(30px, 5vw, 60px) clamp(20px, 4vw, 40px);
@@ -552,6 +552,8 @@ nav ul a:focus {
 .service-item p {
     font-size: 1.2em;
     margin-bottom: 1em;
+    line-height: 1.6;
+
 }
 
 
@@ -701,6 +703,19 @@ nav ul a:focus {
         flex-direction: column;
         align-items: flex-start;
     }
+
+    .service-item p {
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    .contact-container .notice {
+        width: 100%;
+        padding: 0;
+        text-align: justify;
+    }
+
+
 }
 
 .service-expanded-header {
@@ -911,18 +926,19 @@ nav ul a:focus {
 }
 
 .notice {
-    background: rgba(255, 49, 49, 0.472);
+    /* background: rgba(255, 254, 254, 0.13); */
     padding: 20px;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); */
 }
 
 .notice p {
-    font-weight: 600;
-
-    font-size: 1.3em;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.7;
 }
 
 .notice p:not(:last-child) {
@@ -1497,7 +1513,7 @@ button:disabled {
 @media (min-width: 700px) and (max-height: 850px) {
     
 
-    .open-hero {
+    .hero {
         height: auto !important; 
         min-height: 100vh; 
         padding: 15px; 
@@ -1510,7 +1526,7 @@ button:disabled {
 /* Landskapsläge telefon */
 @media (max-height: 500px) and (orientation: landscape) {
 
-    .open-hero {
+    .hero {
         height: auto !important; 
         min-height: 100vh; 
         padding: 15px; 
@@ -1607,10 +1623,11 @@ button:disabled {
         grid-row: 2;
         margin: 0 20px 10px 0;
         font-size: 1.05em;
-        line-height: 1.4;
+        line-height: 1.6;
         align-self: start;
         display: -webkit-box;
         overflow: hidden;
+        text-align: justify;
     }
 
     .service-item .btn {

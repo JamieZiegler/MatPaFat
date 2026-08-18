@@ -90,12 +90,19 @@ export default function Contact() {
             <section className="contact" id="contact" aria-labelledby="contact-heading">
                 <h2 id="contact-heading">Kontakt och beställning</h2>
                 <div className="contact-container">
-                    <p>
-                        Mat på Fat är, till en början, en småskalig verksamhet vid sidan av mitt ordinarie arbete. Jag
-                        svarar på förfrågningar inom 48 timmar och nås bäst via formuläret nedan eller genom mina
-                        sociala medier. Om du inte får tag på mig via telefon, skicka gärna ett SMS – jag återkommer så
-                        snart jag kan. Jag ser fram emot att höra från dig!
-                    </p>
+                    <div className="notice">
+                            <p>
+                                Mat på Fat är en en småskalig verksamhet vid sidan av mitt ordinarie arbete, och jag
+                                nås därför bäst via <u>formuläret nedan</u> eller genom mina sociala medier, SMS eller telefon.
+                            </p>
+
+                            <p>
+                                Svar på förfrågningar kan ta upp till <u>48 timmar</u> - men jag återkommer alltid så snart jag kan.
+                            </p>
+                            <p>
+                                Jag ser fram emot att höra från dig!
+                            </p>
+                    </div>
                     <form 
                         className="contact-form" 
                         aria-label="Kontaktformulär"
@@ -110,14 +117,7 @@ export default function Contact() {
                         <p className="hidden-honey">
                             <label>Fyll inte i detta fält om du är människa: <input name="botField" /></label>
                         </p>
-                        <div className="notice">
-                            <p>
-                                OBS ! Mat på Fat har semesterstängt under vecka 31 - 33.
-                            </p>
-                            <p>
-                                <u>Meddelanden besvaras åter vecka 34.</u>
-                            </p>
-                        </div>
+                        
                         <label htmlFor="name">Namn:</label>
                         <input 
                             type="text" 
@@ -159,7 +159,7 @@ export default function Contact() {
                     
                         <div className="form-notes">
                             <small className="form-note">Genom att skicka detta formulär godkänner du vår <Link to="/villkor">integritetspolicy</Link>.</small>
-                            <small className="form-note"><i>Observera att formulärmeddelanden <u>inte är en bokning</u>. För mer information, besök våra <Link to="/villkor">villkor</Link>.</i></small>
+                            <small className="form-note"><i>Observera att formulärmeddelanden <u>inte är en bokning</u>, och att priserna på hemsidan <u>endast är uppskattningar</u> och kan variera utifrån beställning. För mer information, besök våra <Link to="/villkor">villkor</Link>.</i></small>
 
                         </div>
                         
