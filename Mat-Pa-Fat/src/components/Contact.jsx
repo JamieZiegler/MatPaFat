@@ -172,7 +172,7 @@ export default function Contact() {
                         <h3>Kontaktuppgifter</h3>
                         <div className="contact-detail-item">
                             <p className="contact-name">Jessica Roch</p>
-                            <p className="contact-phone"><a href="tel:+46703225801">070 322 58 01</a></p>
+                            <p className="contact-phone"><a href="tel:+46703225801">073 303 59 64</a></p>
                         </div>
                         <div className="contact-detail-item">
                             <p className="contact-address">

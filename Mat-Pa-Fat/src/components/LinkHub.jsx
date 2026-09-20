@@ -67,7 +67,7 @@ export default function LinkHub() {
                 
                 <div className="linkhub-contact-info">
                     <p>Jessica Roch</p>
-                    <p>070 322 58 01</p>
+                    <p>073 303 59 64</p>
                     <p>Bärnstensvägen 10, 711 76 Storå</p>
                 </div>
             </div>
