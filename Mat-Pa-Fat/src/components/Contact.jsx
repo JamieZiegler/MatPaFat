@@ -77,7 +77,7 @@ export default function Contact() {
                         <a href="https://www.facebook.com/profile.php?id=61583342170417" aria-label="Besök oss på Facebook" target="_blank" rel="noopener noreferrer"><img className="icon" src={facebook} alt="" role="presentation" width="40" height="40" /></a>
                         <a href="https://www.instagram.com/matpafat_/" aria-label="Följ oss på Instagram" target="_blank" rel="noopener noreferrer"><img className="icon" src={instagram} alt="" role="presentation" width="40" height="40" /></a>
                         <a href="https://maps.app.goo.gl/yP7fW2PoECrE9D5M8" aria-label="Hitta oss på kartan" target="_blank" rel="noopener noreferrer"><img className="icon" src={location} alt="" role="presentation" width="40" height="40" /></a>
-                        <a href="tel:+46703225801" aria-label="Ring oss"><img className="icon" src={phone} alt="" role="presentation" width="40" height="40" /></a>
+                        <a href="tel:+46733035964" aria-label="Ring oss"><img className="icon" src={phone} alt="" role="presentation" width="40" height="40" /></a>
                     </div>
                     <button className="contact-button" onClick={() => setSucceeded(false)} style={{marginTop: '20px'}}>Skicka ett nytt meddelande</button>
                 </div>
@@ -172,7 +172,7 @@ export default function Contact() {
                         <h3>Kontaktuppgifter</h3>
                         <div className="contact-detail-item">
                             <p className="contact-name">Jessica Roch</p>
-                            <p className="contact-phone"><a href="tel:+46703225801">073 303 59 64</a></p>
+                            <p className="contact-phone"><a href="tel:+46733035964">073 303 59 64</a></p>
                         </div>
                         <div className="contact-detail-item">
                             <p className="contact-address">
@@ -186,7 +186,7 @@ export default function Contact() {
                         <a href="https://www.facebook.com/profile.php?id=61583342170417" aria-label="Besök oss på Facebook" target="_blank" rel="noopener noreferrer"><img className="icon" src={facebook} alt="" role="presentation" width="40" height="40" /></a>
                         <a href="https://www.instagram.com/matpafat_/" aria-label="Följ oss på Instagram" target="_blank" rel="noopener noreferrer"><img className="icon" src={instagram} alt="" role="presentation" width="40" height="40" /></a>
                         <a href="https://maps.app.goo.gl/yP7fW2PoECrE9D5M8" aria-label="Hitta oss på kartan" target="_blank" rel="noopener noreferrer"><img className="icon" src={location} alt="" role="presentation" width="40" height="40" /></a>
-                        <a href="tel:+46703225801" aria-label="Ring oss"><img className="icon" src={phone} alt="" role="presentation" width="40" height="40" /></a>
+                        <a href="tel:+46733035964" aria-label="Ring oss"><img className="icon" src={phone} alt="" role="presentation" width="40" height="40" /></a>
                     </div>
                 </div>
             </section>

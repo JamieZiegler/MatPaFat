@@ -57,7 +57,7 @@ export default function LinkHub() {
                     </a>
                     
                     <a 
-                        href="tel:+46703225801" 
+                        href="tel:+46733035964" 
                         className="linkhub-link"
                     >
                         <img src={phone} alt="" />
