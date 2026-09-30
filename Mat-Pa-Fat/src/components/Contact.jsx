@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import facebook from '../assets/images/icons/Facebook.svg';
-import instagram from '../assets/images/icons/Instagram.svg';
-import location from '../assets/images/icons/Location.svg';
-import phone from '../assets/images/icons/Phone.svg';
+import { BiLogoFacebookCircle } from "react-icons/bi";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { TiLocation } from "react-icons/ti";
+import { PiPhoneCallFill } from "react-icons/pi";
+import { AiOutlineTikTok } from "react-icons/ai";
+
 
 export default function Contact() {
     const [formErrors, setFormErrors] = useState({});
@@ -183,10 +185,11 @@ export default function Contact() {
                     </div>
 
                     <div className="contact-info" aria-label="Sociala medier och kontakt">
-                        <a href="https://www.facebook.com/profile.php?id=61583342170417" aria-label="Besök oss på Facebook" target="_blank" rel="noopener noreferrer"><img className="icon" src={facebook} alt="" role="presentation" width="40" height="40" /></a>
-                        <a href="https://www.instagram.com/matpafat_/" aria-label="Följ oss på Instagram" target="_blank" rel="noopener noreferrer"><img className="icon" src={instagram} alt="" role="presentation" width="40" height="40" /></a>
-                        <a href="https://maps.app.goo.gl/yP7fW2PoECrE9D5M8" aria-label="Hitta oss på kartan" target="_blank" rel="noopener noreferrer"><img className="icon" src={location} alt="" role="presentation" width="40" height="40" /></a>
-                        <a href="tel:+46703225801" aria-label="Ring oss"><img className="icon" src={phone} alt="" role="presentation" width="40" height="40" /></a>
+                        <a href="https://www.facebook.com/profile.php?id=61583342170417" aria-label="Besök oss på Facebook" target="_blank" rel="noopener noreferrer"><BiLogoFacebookCircle className='icon' /></a>
+                        <a href="https://www.tiktok.com/@matpafat_" aria-label="Följ oss på TikTok" target="_blank" rel="noopener noreferrer"><AiOutlineTikTok className='icon' /></a>
+                        <a href="https://www.instagram.com/matpafat_" aria-label="Följ oss på Instagram" target="_blank" rel="noopener noreferrer"><BiLogoInstagramAlt className='icon' /></a>
+                        <a href="https://maps.app.goo.gl/yP7fW2PoECrE9D5M8" aria-label="Hitta oss på kartan" target="_blank" rel="noopener noreferrer"><TiLocation className='icon' /></a>
+                        <a href="tel:+46703225801" aria-label="Ring oss"><PiPhoneCallFill className='icon' /></a>
                     </div>
                 </div>
             </section>

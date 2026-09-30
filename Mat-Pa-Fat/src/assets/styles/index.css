@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     background-color: #0d0a09;
-    background-image: url('../images/food/background2.webp');
+    background-image: url('../images/food/background3.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -553,7 +553,6 @@ nav ul a:focus {
     font-size: 1.2em;
     margin-bottom: 1em;
     line-height: 1.6;
-
 }
 
 
@@ -1062,14 +1061,16 @@ nav ul a:focus {
 
 .contact-info .icon {
     cursor: pointer;
-    height: 48px;
-    opacity: 0.6;
-    filter: drop-shadow(1px 4px 3px black);
+    width: 32px;
+    height: 32px;
+    opacity: 0.8;
+    color: white;
+    filter: drop-shadow(1px 4px 3px rgba(0, 0, 0, 0.655));
 }
 
 .contact-info .icon:hover {
     opacity: 1;
-    filter: drop-shadow(1px 4px 3px black);
+    filter: drop-shadow(1px 4px 3px rgb(0, 0, 0));
 }
 
 .contact-info a:focus {
@@ -1445,7 +1446,7 @@ button:disabled {
     outline-offset: 2px;
 }
 
-.linkhub-link img {
+.linkhub-link .icon {
     width: 32px;
     height: 32px;
     filter: brightness(0) invert(1);

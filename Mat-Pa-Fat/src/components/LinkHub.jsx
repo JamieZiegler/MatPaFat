@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/images/logo/mpf-genomskinlig-for-fonster.svg'
-import facebook from '../assets/images/icons/Facebook.svg'
-import instagram from '../assets/images/icons/Instagram.svg'
-import location from '../assets/images/icons/Location.svg'
-import phone from '../assets/images/icons/Phone.svg'
+import { BiLogoFacebookCircle } from "react-icons/bi";
+import { BiLogoInstagramAlt } from "react-icons/bi";
+import { TiLocation } from "react-icons/ti";
+import { PiPhoneCallFill } from "react-icons/pi";
+import { AiOutlineTikTok } from "react-icons/ai";
 
 export default function LinkHub() {
     return (
@@ -32,18 +33,26 @@ export default function LinkHub() {
                         target="_blank" 
                         rel="noopener noreferrer"
                     >
-                        <img src={facebook} alt="" />
+                        <BiLogoFacebookCircle className='icon' />
                         <span>Facebook</span>
                     </a>
-                    
                     <a 
                         href="https://www.instagram.com/matpafat_/" 
                         className="linkhub-link"
                         target="_blank" 
                         rel="noopener noreferrer"
                     >
-                        <img src={instagram} alt="" />
+                        <BiLogoInstagramAlt className='icon' />
                         <span>Instagram</span>
+                    </a>
+                    <a 
+                        href="https://www.tiktok.com/@matpafat_" 
+                        className="linkhub-link"
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                    >
+                        <AiOutlineTikTok className='icon' />
+                        <span>TikTok</span>
                     </a>
                     
                     <a 
@@ -52,7 +61,7 @@ export default function LinkHub() {
                         target="_blank" 
                         rel="noopener noreferrer"
                     >
-                        <img src={location} alt="" />
+                        <TiLocation className='icon' />
                         <span>Hitta oss</span>
                     </a>
                     
@@ -60,7 +69,7 @@ export default function LinkHub() {
                         href="tel:+46703225801" 
                         className="linkhub-link"
                     >
-                        <img src={phone} alt="" />
+                        <PiPhoneCallFill className='icon' />
                         <span>Ring oss</span>
                     </a>
                 </div>
